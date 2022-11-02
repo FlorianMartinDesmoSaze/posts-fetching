@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"
 
 const Posts = () => {
     const [data, setData] = useState(null)
@@ -37,11 +38,12 @@ const Posts = () => {
             {error && (<div>{`There is a problem fecthing data - ${error}`}</div>)}
             <ul>
                 {data &&
-                    data.map(({id, title}) => (
-                        <li key={id}>
-                            <h3>{title}</h3>
-                        </li>
-                    ))
+                data.map(({ id, title }) =>
+                <li key={id}>
+                    <Link to={`/posts/${id}`}>
+                        <p>{title}</p>
+                    </Link>
+                </li>)
                 }
             </ul>
         </div>
