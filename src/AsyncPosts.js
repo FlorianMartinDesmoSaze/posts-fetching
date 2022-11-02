@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
 const AsyncPosts = () => {
     const [data, setData] = useState(null)

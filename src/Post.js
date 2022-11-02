@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import React from 'react'
 
 const Post = () => {
     const { id } = useParams();
@@ -13,13 +14,13 @@ const Post = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get(
-                    `https://jsonplaceholder.typicode.com/posts/${id}`
-                )
-                // const response = await fetch( `https://jsonplaceholder.typicode.com/posts/${id}`)
-                // let actualData = await response.json()
-                // setData(actualData)
-                setData(response)
+                // const response = await axios.get(
+                //     `https://jsonplaceholder.typicode.com/posts/${id}`
+                // )
+                const response = await fetch( `https://jsonplaceholder.typicode.com/posts/${id}`)
+                let actualData = await response.json()
+                setData(actualData)
+                // setData(response)
                 setError(null)
                 console.log(response.data)
             } catch (err) {

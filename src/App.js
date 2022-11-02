@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Posts from './Posts';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 // import Movies from './Movies'
