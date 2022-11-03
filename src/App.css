@@ -1,19 +1,95 @@
 .App {
   text-align: center;
-  width: 40%;
   margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
 }
 
-.nav {
+.logo {
+  font-family: 'Monoton', cursive;
+  font-size: 30px;
+  color: black;
+  transition: color 1s, rotate 1s;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border-bottom: solid #ddd 1px;
-  padding-bottom: 1em;
+  padding: .5em 1em .5em 1em;
+  justify-content: space-between;
+}
+
+.home {
+  max-width: 40%;
+  margin: auto;
+}
+
+.home img{
+  width: 100%; 
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin-right: 1em;
+  transition: color .3s;
+}
+
+.nav-links a:hover {
+  color: rgb(218, 0, 0);
+}
+
+.logo:hover{
+  color: red;
+  rotate: 360deg;
+}
+
+/*** burger menu ***/
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  color: black;
+  transition: all .3s ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 40px;
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+}
+
+.menu-btn__burger::before {
+  transform: translate(-20px, -10px);
+}
+
+.menu-btn__burger::after {
+  transform: translate(-20px, 10px);
+}
+
+.menu-btn:hover {
+  transform: rotate(90deg);
 }
