@@ -14,13 +14,13 @@ const Post = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                // const response = await axios.get(
-                //     `https://jsonplaceholder.typicode.com/posts/${id}`
-                // )
-                const response = await fetch( `https://jsonplaceholder.typicode.com/posts/${id}`)
-                let actualData = await response.json()
-                setData(actualData)
-                // setData(response)
+                const response = await axios.get(
+                    `https://jsonplaceholder.typicode.com/posts/${id}`
+                )
+                // const response = await fetch( `https://jsonplaceholder.typicode.com/posts/${id}`)
+                // let actualData = await response.json()
+                // setData(actualData)
+                setData(response.data)
                 setError(null)
                 console.log(response.data)
             } catch (err) {
