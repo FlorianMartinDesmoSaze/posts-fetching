@@ -34,13 +34,14 @@ const Posts = () => {
     }, [])
 
     return (
-        <div>
+        <div className="post-container">
+            <h2>Latest posts</h2>
             {loading && <div>Loading resources...</div>}
             {error && (<div>{`There is a problem fecthing data - ${error}`}</div>)}
-            <ul>
+            <ul className="post-list">
                 {data &&
                 data.map(({ id, title }) =>
-                <li key={id}>
+                <li key={id} className="post-card">
                     <Link to={`/posts/${id}`}>
                         <p>{title}</p>
                     </Link>
