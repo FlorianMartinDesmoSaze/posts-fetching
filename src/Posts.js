@@ -40,10 +40,13 @@ const Posts = () => {
             {error && (<div>{`There is a problem fecthing data - ${error}`}</div>)}
             <ul className="post-list">
                 {data &&
-                data.map(({ id, title }) =>
+                data.map(({ id, title, body }) =>
                 <li key={id} className="post-card">
                     <Link to={`/posts/${id}`}>
-                        <p>{title}</p>
+                        <h2>{title}</h2>
+                        <p>{body}</p>
+                        {/* <button className="btn-detail">Detail</button> */}
+                        <button className="btn-tag">tag</button>
                     </Link>
                 </li>)
                 }
