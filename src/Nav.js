@@ -8,6 +8,9 @@ const Nav = () => {
             <div className="nav-links">
                 <Link to="/">Home</Link>
                 <Link to="/posts">Posts</Link>
+                <Link to="/#">Users</Link>
+                <Link to="/#">About</Link>
+                <Link to="/#">Login</Link>
             </div>
         </nav>
     );
