@@ -33,14 +33,15 @@ const Post = () => {
         getData()
     }, [id])
     return (
-        <div>
-            <h2>This is a post #{id}</h2>
+        <div className="post-page">
+            <h2 className="post-number">This is post #{id}</h2>
             {error && <p>there was an error : {error}</p>}
             {loading && <p>loading...</p>}
             {data &&
-                <div>
-                    <h2>{data.title}</h2>
-                    <p>{data.body}</p>
+                <div className="post-detail">
+                    <h2 className="post-title">{data.title}</h2>
+                    <img src="http://via.placeholder.com/1200x200" alt="placeholder"></img>
+                    <p className="post-body">{data.body}</p>
                 </div>
             }
         </div>
