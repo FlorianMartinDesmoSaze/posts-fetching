@@ -12,19 +12,23 @@ import Footer from './Footer';
 function App() {
   return (
     <div className="App">
-      <div className="anim"></div>
+      {/* <div className="main-container"> */}
+      {/* <div className="anim">
+        <div className="anim-sticky"></div>
+      </div> */}
       <BrowserRouter>
-      {/* <div className="menu-btn">
+        {/* <div className="menu-btn">
         <div className="menu-btn__burger"></div>
       </div> */}
-          <Nav />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route path="/posts/:id" element={<Post />} />
-          </Routes>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:id" element={<Post />} />
+        </Routes>
       </BrowserRouter>
-      <Footer />
+      {/* </div> */}
+        <Footer />
     </div >
   );
 }
