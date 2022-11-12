@@ -2,6 +2,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import React from 'react'
+import Landscape from './landscape.jpeg'
 
 const Post = () => {
     const { id } = useParams();
@@ -9,7 +10,7 @@ const Post = () => {
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    
+
 
     useEffect(() => {
         const getData = async () => {
@@ -40,7 +41,8 @@ const Post = () => {
             {data &&
                 <div className="post-detail">
                     <h2 className="post-title">{data.title}</h2>
-                    <img src="http://via.placeholder.com/1200x200" alt="placeholder"></img>
+                    {/* <img src="http://via.placeholder.com/1200x200" alt="placeholder"></img> */}
+                    <img src={Landscape} alt="icy pines"></img>
                     <p className="post-body">{data.body}</p>
                 </div>
             }

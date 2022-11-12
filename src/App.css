@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  color: rgb(116, 0, 116);
 }
 
 .App {
@@ -58,7 +59,6 @@ a:hover {
 }
 
 .logo:hover{
-  color: red;
   rotate: 360deg;
 }
 
@@ -112,6 +112,7 @@ display: flex;
 .home-title {
   background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(0,255,218,1) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
 	-webkit-text-fill-color: transparent;
   box-shadow: 3px 3px 10px rgba(171,0,255,.5), 0 0 10px rgba(0,255,218,.5);
   border-radius: 5px;
@@ -197,6 +198,11 @@ display: flex;
   margin: 0;
 }
 
+.post-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 
 .post-card:hover {
   /* background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(0,255,218,1) 100%);
@@ -240,16 +246,18 @@ display: flex;
   max-width: 50%;
   margin: auto;
   border-radius: 5px;
+  min-height:100%;
 }
 
 .post-number {
   background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(0,255,218,1) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
 	-webkit-text-fill-color: transparent;
+  box-shadow: 3px 3px 10px rgba(171,0,255,.5), 0 0 10px rgba(0,255,218,.5);
   border-radius: 5px;
-  margin: 2em 0 1em 0;
-  padding: .5em 0;
-  box-shadow:  3px 3px 10px #bebebea9, -7px -7px 14px #ffffff;
+  padding: 10px;
+  margin-top: 2rem;
   transition: all .3s ease-in-out;
 }
 
@@ -267,7 +275,8 @@ display: flex;
 
 .post-detail:hover{
   scale:1.1;
-  /* background:rgb(194, 177, 255); */
+  box-shadow: 3px 3px 10px rgba(171,0,255,.5), 0 0 10px rgba(0,255,218,.5);
+  scale: 1.1;
 }
 .post-detail img{
   width:100%;

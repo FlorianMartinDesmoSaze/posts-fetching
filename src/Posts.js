@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import React from 'react'
+import Mountains from './mountains.webp'
 
 const Posts = () => {
     const [data, setData] = useState(null)
@@ -44,6 +45,7 @@ const Posts = () => {
                 <li key={id} className="post-card">
                     <Link to={`/posts/${id}`}>
                         <h2>{title}</h2>
+                        <img src={Mountains} alt="icy mountains" className="card-picture" />
                         <p>{body}</p>
                         {/* <button className="btn-detail">Detail</button> */}
                         <button className="btn-tag">tag</button>
