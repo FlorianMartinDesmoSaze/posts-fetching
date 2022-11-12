@@ -317,6 +317,12 @@ display: flex;
   top: 90vh;
 }
 
+.footer a:hover {
+  cursor: pointer;
+}
+
+/*** test ***/
+
 .anim {
   height: 100vh;
   color: #fff;
