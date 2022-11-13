@@ -12,9 +12,11 @@ import Footer from './Footer';
 function App() {
   return (
     <div className="App">
-      {/* <div className="main-container"> */}
-      {/* <div className="anim">
-        <div className="anim-sticky"></div>
+      {/* testing sticky element for bg */}
+      {/* <div className="main-container">
+        <div className="anim">
+          <div className="anim-sticky"></div>
+        </div>
       </div> */}
       <BrowserRouter>
         {/* <div className="menu-btn">
@@ -27,8 +29,7 @@ function App() {
           <Route path="/posts/:id" element={<Post />} />
         </Routes>
       </BrowserRouter>
-      {/* </div> */}
-        <Footer />
+      <Footer />
     </div >
   );
 }
