@@ -35,7 +35,7 @@ const Posts = () => {
     }, [])
 
     return (
-        <div className="post-container">
+        <div className="post-container div-component">
             <h2>Latest posts</h2>
             {loading && <div>Loading resources...</div>}
             {error && (<div>{`There is a problem fecthing data - ${error}`}</div>)}
@@ -48,7 +48,7 @@ const Posts = () => {
                         <img src={Mountains} alt="icy mountains" className="card-picture" />
                         <p>{body}</p>
                         {/* <button className="btn-detail">Detail</button> */}
-                        <button className="btn-tag">tag</button>
+                        <a href="/posts"><button className="btn-tag">tag</button></a>
                     </Link>
                 </li>)
                 }

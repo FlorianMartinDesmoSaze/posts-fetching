@@ -8,6 +8,11 @@ import Home from './Home'
 import Post from './Post'
 import Nav from './Nav';
 import Footer from './Footer';
+import Create from './Create'
+import JobList from './JobList';
+import About from './About';
+import Login from './Login';
+import CGU from './CGU';
 
 function App() {
   return (
@@ -27,6 +32,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/posts/:id" element={<Post />} />
+          <Route path='/create' element={<Create />} />
+          <Route path='/joblist' element={<JobList />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/cgu' element={<CGU />} />
         </Routes>
       </BrowserRouter>
       <Footer />

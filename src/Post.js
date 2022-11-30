@@ -34,7 +34,7 @@ const Post = () => {
         getData()
     }, [id])
     return (
-        <div className="post-page">
+        <div className="post-page div-component">
             <h2 className="post-number">This is post #{id}</h2>
             {error && <p>there was an error : {error}</p>}
             {loading && <p>loading...</p>}
