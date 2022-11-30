@@ -13,6 +13,7 @@ import JobList from './JobList';
 import About from './About';
 import Login from './Login';
 import CGU from './CGU';
+import DisplayName from './DisplayName';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path='/create' element={<Create />} />
           <Route path='/joblist' element={<JobList />} />
           <Route path='/about' element={<About />} />
+          <Route path='/displayname' element={<DisplayName />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cgu' element={<CGU />} />
         </Routes>
