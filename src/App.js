@@ -9,7 +9,7 @@ import Post from './Post'
 import Nav from './Nav';
 import Footer from './Footer';
 import Create from './Create'
-import JobList from './JobList';
+import ShopArticles from './ShopArticles';
 import About from './About';
 import Login from './Login';
 import CGU from './CGU';
@@ -34,7 +34,7 @@ function App() {
           <Route path="/posts" element={<Posts />} />
           <Route path="/posts/:id" element={<Post />} />
           <Route path='/create' element={<Create />} />
-          <Route path='/joblist' element={<JobList />} />
+          <Route path='/shop' element={<ShopArticles />} />
           <Route path='/about' element={<About />} />
           <Route path='/displayname' element={<DisplayName />} />
           <Route path='/login' element={<Login />} />
