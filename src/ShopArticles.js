@@ -10,7 +10,7 @@ const ShopArticles = () => {
 
         const getData = async () => {
             try {
-                const response = await axios.get('https://6387cc36d94a7e50408dbe23.mockapi.io/user')
+                const response = await axios.get('https://fakestoreapi.com/products')
                 setData(response.data);
                 setError(null)
                 console.log(`data in fetch ${response.data}`)

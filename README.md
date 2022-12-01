@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# A simple sandbox project to mess around with React
+
+## Compile sass file
+
+sass --watch .\src\App.scss:./src/App.css
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
